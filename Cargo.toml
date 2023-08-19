@@ -14,6 +14,7 @@ rustdoc-args = ["--cfg", "docsrs"]
 
 [features]
 vendored = ["openssl/vendored"]
+boring = ["openssl/unstable_boringssl"]
 alpn = ["security-framework/alpn"]
 
 [target.'cfg(any(target_os = "macos", target_os = "ios"))'.dependencies]
